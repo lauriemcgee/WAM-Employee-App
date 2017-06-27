@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+ get '/employeesearch' => 'pages#index'
+  
   namespace :api do
-    get '/' => 'employees#index'
+    get '/employeedata' => 'employees#index'
   end
 end
