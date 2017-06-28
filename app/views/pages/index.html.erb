@@ -1,8 +1,10 @@
 <div id="app">
-  Search: <input type="text"  list="names">
+  Search: <input type="text"  list="names" v-model="searchFilter">
   <div>
     <ul>
-      <li v-for="employee in employees">{{ employee.first_name }}</li>
+      <li v-for="employee in filteredEmployees">{{ employee.first_name }} {{ employee.last_name }}, {{ employee.job_title }}</li>
     </ul>
   </div>
 </div>
+
+
