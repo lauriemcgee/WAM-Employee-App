@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       searchFilter: ""
     },
     mounted: function() {
-      $.get('http://localhost:3000/api/employeedata', function(responseEmployeeData) {
+      $.get('https://gentle-scrubland-97350.herokuapp.com/api/employeedata', function(responseEmployeeData) {
         console.log(responseEmployeeData);
         this.employees = responseEmployeeData;
       }.bind(this));
